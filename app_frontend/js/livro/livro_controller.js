@@ -21,7 +21,7 @@ function salvarLivro(livros){
         })    
     }
     else {
-        atualizarLivro(livros.id, (erro, livros) => {
+        atualizarLivro(livros.id,livros, (erro, livros) => {
             carregarLivros();
             limparCampos();
         })
